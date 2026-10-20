@@ -1,0 +1,66 @@
+{
+  "semantic_wins": [
+    {
+      "query_id": "1140",
+      "query_text": "Taking 400mg of \u03b1-tocopheryl acetate helps to prevent prostate cancer.",
+      "bm25_ndcg": 0.301,
+      "dense_ndcg": 1.0,
+      "hybrid_ndcg": 1.0,
+      "diff_hybrid_bm25": 0.699,
+      "diff_bm25_dense": -0.699,
+      "relevant_titles": [
+        "Vitamins E and C in the prevention of prostate and total cancer in men: the Physicians' Health Study II randomized controlled trial."
+      ]
+    },
+    {
+      "query_id": "831",
+      "query_text": "NF2 (Merlin) prevents phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila.",
+      "bm25_ndcg": 0.0,
+      "dense_ndcg": 1.0,
+      "hybrid_ndcg": 0.6309,
+      "diff_hybrid_bm25": 0.6309,
+      "diff_bm25_dense": -1.0,
+      "relevant_titles": [
+        "A genetic screen identifies an LKB1\u2013MARK signalling axis controlling the Hippo\u2013YAP pathway"
+      ]
+    },
+    {
+      "query_id": "956",
+      "query_text": "Pleiotropic coupling of GLP-1R to intracellular effectors promotes distinct profiles of cellular signaling.",
+      "bm25_ndcg": 0.0,
+      "dense_ndcg": 0.5,
+      "hybrid_ndcg": 0.6309,
+      "diff_hybrid_bm25": 0.6309,
+      "diff_bm25_dense": -0.5,
+      "relevant_titles": [
+        "The Extracellular Surface of the GLP-1 Receptor Is a Molecular Trigger for Biased Agonism"
+      ]
+    }
+  ],
+  "lexical_wins": [
+    {
+      "query_id": "49",
+      "query_text": "ADAR1 binds to Dicer to cleave pre-miRNA.",
+      "bm25_ndcg": 1.0,
+      "dense_ndcg": 0.0,
+      "hybrid_ndcg": 0.3562,
+      "diff_hybrid_bm25": -0.6438,
+      "diff_bm25_dense": 1.0,
+      "relevant_titles": [
+        "ADAR1 Forms a Complex with Dicer to Promote MicroRNA Processing and RNA-Induced Gene Silencing"
+      ]
+    },
+    {
+      "query_id": "437",
+      "query_text": "Functional consequences of genomic alterations due to Myelodysplastic syndrome (MDS) are poorly understood due to the lack of an animal model.",
+      "bm25_ndcg": 1.0,
+      "dense_ndcg": 0.0,
+      "hybrid_ndcg": 0.3333,
+      "diff_hybrid_bm25": -0.6667,
+      "diff_bm25_dense": 1.0,
+      "relevant_titles": [
+        "Establishment of human iPSC-based models for the study and targeting of glioma initiating cells"
+      ]
+    }
+  ]
+}

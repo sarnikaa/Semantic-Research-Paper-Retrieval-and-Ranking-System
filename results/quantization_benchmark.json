@@ -1,0 +1,7 @@
+{
+  "fp32_latency_ms": 189.1,
+  "int8_latency_ms": 112.74,
+  "speedup_factor": 1.68,
+  "spearman_rank_correlation": 0.3354,
+  "pearson_correlation": 0.4347
+}

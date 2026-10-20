@@ -1,0 +1,66 @@
+[
+  {
+    "id": "scifact_grounded_1",
+    "type": "Grounded LLM Summary",
+    "metrics": {
+      "grounding_score": 0.7124,
+      "entity_containment": 0.7059,
+      "hallucination_rate": 0.2941,
+      "token_precision": 0.7222,
+      "token_recall": 0.5909,
+      "token_f1": 0.65,
+      "supported_facts_count": 12,
+      "unsupported_facts_count": 5,
+      "sample_unsupported_facts": [
+        "clinical",
+        "counteracting",
+        "lowered",
+        "overall",
+        "treatment"
+      ],
+      "verdict": "ACCEPTABLE (Moderate Grounding)"
+    }
+  },
+  {
+    "id": "scifact_grounded_2",
+    "type": "Grounded LLM Summary",
+    "metrics": {
+      "grounding_score": 0.8386,
+      "entity_containment": 0.8421,
+      "hallucination_rate": 0.1579,
+      "token_precision": 0.8333,
+      "token_recall": 0.6522,
+      "token_f1": 0.7317,
+      "supported_facts_count": 16,
+      "unsupported_facts_count": 3,
+      "sample_unsupported_facts": [
+        "demonstrates",
+        "optimized",
+        "reaching"
+      ],
+      "verdict": "FAITHFUL (High Grounding)"
+    }
+  },
+  {
+    "id": "synthetic_hallucinated_1",
+    "type": "Adversarial Hallucinated Summary",
+    "metrics": {
+      "grounding_score": 0.1333,
+      "entity_containment": 0.1333,
+      "hallucination_rate": 0.8667,
+      "token_precision": 0.1333,
+      "token_recall": 0.0909,
+      "token_f1": 0.1081,
+      "supported_facts_count": 2,
+      "unsupported_facts_count": 13,
+      "sample_unsupported_facts": [
+        "000",
+        "10000",
+        "administered",
+        "aspirin",
+        "boston"
+      ],
+      "verdict": "LOW GROUNDING (Potential Hallucination)"
+    }
+  }
+]
