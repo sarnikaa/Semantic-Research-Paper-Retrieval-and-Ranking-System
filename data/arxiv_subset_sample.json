@@ -1,0 +1,101 @@
+{
+  "2610.26831v1": {
+    "id": "2610.26831v1",
+    "title": "AGR: Agentic Generative Retrieval with Tool-Augmented Search",
+    "text": "Large-scale search and recommendation systems derive much of their retrieval quality from rich, heterogeneous features, yet existing generative retrieval (GR) methods struggle to exploit such feature ecosystems efficiently. Static feature injection either encodes all available signals or places them according to predetermined schemes, increasing serving cost and introducing irrelevant or conflicting evidence. More fundamentally, existing methods cannot adaptively determine when a feature is needed, which feature to select, or where it should influence hierarchical Semantic ID (SID) generation. We propose Agentic Generative Retrieval (AGR), a tool-augmented paradigm that interleaves SID generation with on-demand feature acquisition. Conditioned on the request and decoded SID prefix, AGR decides whether to invoke a tool, which feature to acquire, and where its observation should influence subsequent decoding, thereby steering generation toward feature-consistent SID branches. To supervise this behavior, we construct tool-augmented trajectories based on feature applicability and information gain along the SID hierarchy, and train the model through SID pretraining followed by tool-augmented fine-tuning. Experiments on an industrial dataset and three public benchmarks, together with an online A/B test, consistently demonstrate the effectiveness of AGR.",
+    "authors": [
+      "Ming Yang",
+      "Yaqi Yin",
+      "Zhibo Wang",
+      "Xiaoze Jiang",
+      "Jingwei Zhuo",
+      "Chao Zhang",
+      "Quanzhi Zhu",
+      "Weiguo Zheng",
+      "Liang Zeng",
+      "Yunfeng Zhao",
+      "Jiaqiang Liu",
+      "Kefeng Wang",
+      "Yupeng Huang",
+      "Kaiqiao Zhan",
+      "Xuanping Li"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "date": "2026-10-19",
+    "year": 2026
+  },
+  "2610.26817v1": {
+    "id": "2610.26817v1",
+    "title": "Next Best Action: Causal Constrained Offline RL for Business Action Targeting",
+    "text": "Next Best Action (NBA) systems must select among customer interventions (e.g., discounts, promotions, and lifecycle actions), maximize long-term economic value, satisfy complex operational constraints, and remain causally grounded. Existing approaches lack a rigorous framework for meeting these requirements jointly. We address this gap by formulating NBA as a Constrained Markov Decision Process (CMDP). We then integrate off-policy causal correction of the estimated customer dynamics directly into the Linear Programming (LP) formulation of the CMDP. The resulting policy selects actions based on customer states to maximize long-term value while explicitly enforcing business guardrails. Furthermore, the LP formulation yields shadow prices that quantify the economic trade-offs of operational constraints (e.g., fairness and user welfare), enhancing policy interpretability. We validate our proposed offline Reinforcement Learning (RL) framework on an industry case study involving rideshare coupon targeting, where customer states are defined by Recency, Frequency, and Monetary (RFM) stages. We evaluate performance using model-based off-policy evaluation, with causal dynamics estimated from a temporal holdout. Under the observed coupon budget and RFM state representation, our optimized policy improves customer lifetime value (LTV) by 19% over the estimated behavior policy and 8% over a myopic baseline. Although the demonstrated action space is binary, the proposed framework is action-agnostic, yielding a general-purpose decision module for targeting systems that manage multiple interventions.",
+    "authors": [
+      "Surya Ramachandiran",
+      "Yiming Li",
+      "Juan Mancilla-Caceres",
+      "Tao Ye",
+      "Jun Liu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.IR"
+    ],
+    "date": "2026-10-19",
+    "year": 2026
+  },
+  "2610.26524v1": {
+    "id": "2610.26524v1",
+    "title": "Beyond Behavioral Accuracy: Evaluating Individual-Level Fidelity in LLM Investor Simulation",
+    "text": "Large language models (LLMs) are increasingly used as user simulators, but can they faithfully reproduce an individual's behavior and decision logic over time? We investigate this question in a longitudinal paper-trading study with 80 participants. Using rolling next-day predictions, we evaluate trading activity, buy-sell structure, asset selection, and portfolio outcomes, complemented by controlled input ablations and participant-rated explanation alignment. No evaluated LLM reliably outperforms a simple recent-activity persistence baseline for predicting trade occurrence, while buy-sell structure and asset selection remain difficult to reproduce. Similar activity-level performance can also yield substantially different portfolio trajectories. Ablations show that activity predictions depend primarily on recent trades, whereas asset choices are sensitive to multiple evidence sources. Participants rate explanations as more aligned with their recurring strategies than with their decision-specific rationales. These findings reveal a gap between coarse behavioral agreement and individual-level fidelity, motivating separate evaluation of behavioral accuracy, explanation alignment, and evidence dependence in personalized user simulation.",
+    "authors": [
+      "Jiajie He",
+      "Yuanhong Jiang",
+      "Xintong Chen",
+      "Dongling Ni",
+      "Wenjin Liu"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "date": "2026-10-19",
+    "year": 2026
+  },
+  "2610.26433v1": {
+    "id": "2610.26433v1",
+    "title": "The Geometry of Agent Memory: Forecasting Retrieval-Bound Memory Failures, and Characterizing Its Limits",
+    "text": "We study whether geometric relationships between conversation turns, memory texts, and queries can predict answer correctness before generation. We evaluate four memory implementations with dense or hybrid retrieval and one observation-summary comparator. We embed these texts in a shared space. A logistic classifier uses 25 features describing query proximity, memory-conversation correspondence, and conversation structure. On LongMemEval-small, pooled AUROC is 0.640 over 2,367 question-system pairs, below a question-difficulty baseline of 0.655. Performance varies by question type: geometry reaches 0.841 on single-session-assistant questions, but system identity alone reaches 0.826. After controlling for difficulty and identity, geometry adds no statistically established pooled improvement (delta = +0.002, 95% CI [-0.010, 0.014]). A fixed-store context-selection experiment finds higher accuracy with proximity-ranked memories than with random subsets, consistent with ordinary retrieval relevance. On LoCoMo, nearest-turn similarity has modest predictive value for single-hop questions and near-chance estimates for several other categories. Training uses correctness labels; prediction uses pre-answer features and no additional LLM generation call. The results characterize associations between memory representations and correctness, rather than establish a reliable deployment diagnostic. In particular, embedding proximity does not verify fact coverage or distinguish memory-construction, retrieval, and generation errors.",
+    "authors": [
+      "Iliya Zhechev",
+      "Radoslav Ralev",
+      "Chris Coleman",
+      "Srijith Rajamohan",
+      "Jen Agarwal",
+      "Tyler Hutcherson",
+      "Simba Khadder"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "date": "2026-10-19",
+    "year": 2026
+  },
+  "2610.26339v1": {
+    "id": "2610.26339v1",
+    "title": "Large-Scale Biomedical RAG: Corpus Scaling, Document Representation, and Efficiency Trade-offs",
+    "text": "We present a controlled, large-scale evaluation of how corpus scale, document representation, and reranking affect the effectiveness and efficiency of biomedical Retrieval-Augmented Generation (RAG) systems. Retrieval collections were progressively expanded while retaining the relevant source documents, enabling consistent comparisons across corpus sizes. We compared abstract, flat full-text, and hierarchical full-text representations across first-stage retrieval, reranking, and end-to-end multiple-choice question answering. Configurations selected on development data were evaluated on five external biomedical benchmarks and a held-out test set, while retrieval latency and index storage were measured to quantify operational cost. Performance patterns observed with small or controlled collections did not consistently persist as collections grew, and the usefulness of reranking depended on the corpus and retrieval setting. RAG improved three of four model configurations across the external benchmarks, with mean gains of up to 9.6 percentage points, and improved all four configurations on the held-out test set by 10.2-30.3 points. Abstract retrieval performed best when reference evidence was abstract-aligned, whereas full-text representations were generally more effective when richer evidence was needed. Hierarchical representation matched or outperformed flat full-text retrieval in most end-to-end comparisons while requiring 67% fewer indexed units and 44-56% less storage. These findings show that corpus scale should be treated as an explicit evaluation variable in biomedical RAG, and that the most appropriate design depends on evidence format, model behavior, and operational constraints.",
+    "authors": [
+      "Adri\u00e1n S\u00e1nchez-Freire",
+      "Gonzalo P\u00e9rez-G\u00f3mez",
+      "Aitziber Atutxa",
+      "Ander Barrena"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "date": "2026-10-19",
+    "year": 2026
+  }
+}
